@@ -291,10 +291,10 @@ while (1) { // bucle principal
 			}
 			
 			// draw
-			if (specie1[x][y].age>0 && specie2[x][y].age>0) { led_canvas_set_pixel(offscreen_canvas,x,y,100,100,0); } // yellow if species comp
+			if (specie1[x][y].age>0 && specie2[x][y].age>0) { led_canvas_set_pixel(offscreen_canvas,x,y,150,150,0); } // yellow if species comp
 			if (specie1[x][y].age>0 && specie2[x][y].age==0) { led_canvas_set_pixel(offscreen_canvas,x,y,100,0,0); } // red only specie1
 			if (specie1[x][y].age==0 && specie2[x][y].age>0) { led_canvas_set_pixel(offscreen_canvas,x,y,0,0,100); } // blue only specie2
-			if (specie1[x][y].age==0 && specie2[x][y].age==0 && plantes[x][y].age>0) { led_canvas_set_pixel(offscreen_canvas,x,y,0,100,0); } // green only plants
+			if (specie1[x][y].age==0 && specie2[x][y].age==0 && plantes[x][y].age>0) { led_canvas_set_pixel(offscreen_canvas,x,y,0,80,0); } // green only plants
 			if (specie1[x][y].age==0 && specie2[x][y].age==0 && plantes[x][y].age==0) { led_canvas_set_pixel(offscreen_canvas,x,y,0,0,0); } // black nothing
 		}
 	}
